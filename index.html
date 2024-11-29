@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เกมการ์ด: ค้อน กระดาษ กรรไกร</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>เกมการ์ด: ค้อน กระดาษ กรรไกร</h1>
+      
+        <div id="player-area">
+          <h2>ผู้เล่น</h2>
+          <p>พลังชีวิต: <span id="player-hp">50</span></p>
+          <div id="player-card" class="card-frame">
+            <p>การ์ดของคุณ</p>
+            <div class="cards">
+              <button onclick="playCard('rock')">🪨 ค้อน</button>
+              <button onclick="playCard('paper')">📄 กระดาษ</button>
+              <button onclick="playCard('scissors')">✂️ กรรไกร</button>
+            </div>
+          </div>
+        </div>
+      
+        <div id="opponent-area">
+          <h2>คู่ต่อสู้</h2>
+          <p>พลังชีวิต: <span id="opponent-hp">50</span></p>
+          <div id="opponent-card" class="card-frame">
+            <p>การ์ดของคู่ต่อสู้</p>
+            <div id="opponent-card-content">การ์ดของคู่ต่อสู้จะเปิดเผยที่นี่</div>
+          </div>
+        </div>
+      
+        <div id="countdown">เลือกการ์ด...</div>
+        <p id="result"></p>
+      
+        <!-- ประวัติการเล่น -->
+        <div id="history">
+          <h3>ประวัติการเล่น</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>รอบ</th>
+                <th>คุณเลือก</th>
+                <th>คู่ต่อสู้เลือก</th>
+                <th>ผลลัพธ์</th>
+                <th>ความเสียหาย</th>
+              </tr>
+            </thead>
+            <tbody id="history-list"></tbody>
+          </table>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- ลิงก์ไปยังไฟล์ JavaScript -->
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* ตั้งค่าพื้นฐานของหน้าเว็บ */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff8a00, #e52e71); /* สีสันสดใส */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* ตั้งค่ากล่องเกม */
+  #game {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เงาหนา */
+    animation: fadeIn 1s ease-out; /* การแสดงผลแบบเฟดอิน */
+  }
+  
+  /* หัวข้อเกม */
+  h1 {
+    font-size: 32px;
+    color: #4A90E2;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* กรอบการ์ดของผู้เล่นและคู่ต่อสู้ */
+  .card-frame {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* กรอบการ์ดของผู้เล่น */
+  #player-card {
+    border-color: #ff8a00; /* สีสำหรับกรอบของผู้เล่น */
+  }
+  
+  /* กรอบการ์ดของคู่ต่อสู้ */
+  #opponent-card {
+    border-color: #e52e71; /* สีสำหรับกรอบของคู่ต่อสู้ */
+  }
+  
+  .card-frame p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ปุ่มการ์ด */
+  .cards button {
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards button:hover {
+    background-color: #e52e71; /* เปลี่ยนสีเมื่อ hover */
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+  }
+  
+  .cards button:active {
+    transform: scale(0.9); /* เมื่อกดจะหดตัวเล็กน้อย */
+  }
+  
+  /* การตั้งค่าพื้นหลังของ countdown */
+  #countdown {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  /* ผลลัพธ์ของเกม */
+  #result {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ตารางประวัติ */
+  #history {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #F1F1F1;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
+  }
+  
+  /* ปุ่มต่างๆ */
+  button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #C0392B;
+  }
+  
+  /* การตั้งค่า animation สำหรับ fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* ปรับให้ตัวอักษรทุกส่วนดูเข้ากัน */
+  h2, p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* การจัดรูปแบบการแสดงผล */
+  #player-area, #opponent-area {
+    margin-bottom: 30px;
+  }
+  
+  #player-card, #opponent-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
